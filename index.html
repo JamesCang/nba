@@ -5,12 +5,12 @@
   <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
-  <iframe src="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=w0019ksirvd
-" width="700" height="755" scrolling="no"></iframe>
+  <iframe src="http://v.qq.com/cover/j/jco4aclfbpqpeia.html" width="700" height="755" scrolling="no"></iframe>
   <div class="video-list">
+    <div class="date">2016-01-01</div>
     <ul>
       <li>
-        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=u001902qvjn">十佳球</a>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=u001902qvjn">今日十佳球</a>
       </li>
       <li>
         <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=u0019fl8geb">开拓者96-109爵士</a>
@@ -35,12 +35,13 @@
   <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
   <script type="text/javascript">
     $('a').on('click', function(e) {
-
       e.preventDefault();
 
-      var url = $(e.target).attr('href');
+      var videoLink = $(e.target);
 
-      $('iframe').attr('src', url);
+      $('iframe').attr('src', videoLink.attr('href'));
+      videoLink.parent('li').css({'list-style': 'url("./watched.png")'});
+      videoLink.css({'color': '#08b87b'});
     });
   </script>
 </body>

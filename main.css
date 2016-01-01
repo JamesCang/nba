@@ -12,9 +12,38 @@ iframe {
   width: 500px;
   height: 700px;
   max-height: 700px;
+  font-size: 20px;
   overflow: auto;
 }
 
-.video-list, li {
+ul {
+  list-style: url('./new.png');
+}
+
+li {
   margin: 20px 0px;
+  transition: transform 2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #08b87b;
+  text-decoration: underline;
+}
+
+.date {
+  padding: 0px 0px 0px 15px;
+  height: 60px;
+  line-height: 80px;
+  color: #ff7800;
+  cursor: pointer;
+  font-size: 32px;
+  transition: transform 1s;
+}
+
+.date:hover {
+  transform: rotateX(360deg);
 }
