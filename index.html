@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>nba</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+  <iframe src="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=w0019ksirvd
+" width="700" height="755" scrolling="no"></iframe>
+  <div class="video-list">
+    <ul>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=u001902qvjn">十佳球</a>
+      </li>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=u0019fl8geb">开拓者96-109爵士</a>
+      </li>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=u0019fl8geb">快船95-89鹈鹕</a>
+      </li>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=f0019x6z2n9">太阳106-110雷霆</a>
+      </li>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=c0019us7x89">森林狼90-115活塞</a>
+      </li>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=h0019ldiufo">雄鹿120-116步行者</a>
+      </li>
+      <li>
+        <a href="http://v.qq.com/cover/b/brbqbn1aaoakexx.html?vid=b0019mdji77">森林狼90-115活塞</a>
+      </li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+  <script type="text/javascript">
+    $('a').on('click', function(e) {
+
+      e.preventDefault();
+
+      var url = $(e.target).attr('href');
+
+      $('iframe').attr('src', url);
+    });
+  </script>
+</body>
+</html>
